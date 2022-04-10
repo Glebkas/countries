@@ -9,43 +9,22 @@ import { Card } from './components/Card/Card';
 import { ALL_COUNTRIES } from './utils/api';
 
 function App() {
-    const [countries, setCountries] = useState('');
-    console.log(countries);
+    const [countries, setCountries] = useState([]);
 
     useEffect(() => {
         axios.get(ALL_COUNTRIES).then(({ data }) => setCountries(data));
-    }, [countries]);
-
+    }, []);
 
     return (
         <>
-            <Header></Header>
+            <Header />
+            {console.log(countries)}
             <Main>
-                <Controls></Controls>
+                <Controls />
                 <List>
-                    {countries.map((country) => {
-                        const countryInfo = {
-                            img: country.flags.png,
-                            name: country.name,
-                            info: [
-                                {
-                                    title: 'Population',
-                                    description:
-                                        country.population.toLocalString(),
-                                },
-                                {
-                                    title: 'Region',
-                                    description: country.region.toLocalString(),
-                                },
-                                {
-                                    title: 'Capital',
-                                    description:
-                                        country.capital.toLocalString(),
-                                },
-                            ],
-                        };
-                        return <Card key={country.name} {...countryInfo} />;
-                    })}
+                    {countries.map((country, index) => (
+                        <Card key={index} country={country} />
+                    ))}
                 </List>
             </Main>
         </>
