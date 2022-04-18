@@ -4,8 +4,11 @@ import { CardBody } from './CardBody';
 import { CardList } from './CardList';
 import { CardListItem } from './CardListItem';
 import { CardTitle } from './CardTitle';
+import { useNavigate } from 'react-router-dom';
 
 export const Card = (props) => {
+    let navigate = useNavigate();
+
     let info = [
         {
             title: 'Population',
@@ -22,7 +25,7 @@ export const Card = (props) => {
     ];
 
     return (
-        <CardWrapper>
+        <CardWrapper onClick={() => navigate(`/country/${props.country.name}`)}>
             <CardImage src={props.country.flags.png}></CardImage>
             <CardBody>
                 <CardTitle>{props.country.name}</CardTitle>
