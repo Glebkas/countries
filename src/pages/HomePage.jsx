@@ -4,30 +4,35 @@ import { Controls } from '../components/Controls/Controls';
 import { List } from '../components/List/List';
 import { Card } from '../components/Card/Card';
 import { ALL_COUNTRIES } from '../utils/api';
-import { useNavigate } from 'react-router-dom';
 
-export const HomePage = () => {
-    const [countries, setCountries] = useState([]);
-    let navigate = useNavigate();
+export const HomePage = ({ countries, setCountries }) => {
+    const [filteredCountries, setFilteredCountries] = useState(countries);
+
     useEffect(() => {
-        axios.get(ALL_COUNTRIES).then(({ data }) => setCountries(data));
+        if (!countries.length)
+            axios.get(ALL_COUNTRIES).then(({ data }) => setCountries(data));
     }, []);
 
-    // const handleCardClick = (country) => {
-    //     navigate(`/country/${country.name}`);
-    //     console.log(country.name);
-    // };
+    const handleSearch = (search, region) => {
+        let data = [...countries];
+        if (region) {
+            data = data.filter((country) => country.region.includes(region));
+        }
+
+        if (search) {
+            data = data.filter((country) =>
+                country.name.toLowerCase().includes(search.toLowerCase())
+            );
+        }
+        setFilteredCountries(data);
+    };
 
     return (
         <>
-            <Controls />
+            <Controls onSearch={handleSearch} />
             <List>
-                {countries.map((country, index) => (
-                    <Card
-                       
-                        key={index}
-                        country={country}
-                    />
+                {filteredCountries.map((country, index) => (
+                    <Card key={index} country={country} />
                 ))}
             </List>
         </>
