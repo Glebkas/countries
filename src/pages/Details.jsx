@@ -1,3 +1,6 @@
-export const Details = ({ match }) => {
-    return <div> Details {match.params.name}</div>;
+import { useParams } from "react-router-dom";
+export const Details = () => {
+    const { name } = useParams();
+
+    return <div> Details {name}</div>;
 };
