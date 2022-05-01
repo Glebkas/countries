@@ -32,7 +32,7 @@ Users should be able to:
 ### Links
 
 -   Github Repository: https://github.com/Glebkas/countries
--   Live Site URL: https://github.com/Glebkas/countries
+-   Live Site URL: https://glebkas.github.io/countries/
 
 ## My process
 
