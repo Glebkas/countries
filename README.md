@@ -2,14 +2,14 @@
 
 ## Table of contents
 
-- [Overview](#overview)
-  - [The challenge](#the-challenge)
-  - [Screenshot](#screenshot)
-  - [Links](#links)
-- [My process](#my-process)
-  - [Built with](#built-with)
-  - [Continued development](#continued-development)
-- [Author](#author)
+-   [Overview](#overview)
+    -   [The challenge](#the-challenge)
+    -   [Screenshot](#screenshot)
+    -   [Links](#links)
+-   [My process](#my-process)
+    -   [Built with](#built-with)
+    -   [Continued development](#continued-development)
+-   [Author](#author)
 
 ## Overview
 
@@ -17,42 +17,42 @@
 
 Users should be able to:
 
-- View the optimal layout for the app depending on their device's screen size
-- See hover states for all interactive elements on the page
-- Toggle between dark and light modes
-- Search for specific counrty by typing a name
-- Filter countries by region
-- View each country page for detailed information
-- Navigate to countries that have a border with the selected country
+-   View the optimal layout for the app depending on their device's screen size
+-   See hover states for all interactive elements on the page
+-   Toggle between dark and light modes
+-   Search for specific counrty by typing a name
+-   Filter countries by region
+-   View each country page for detailed information
+-   Navigate to countries that have a border with the selected country
 
 ### Screenshots
 
-![](./screenshot1.jpg)
 ![](./screenshot2.jpg)
+![](./screenshot1.jpg)
 
 ### Links
 
-- Github Repository: https://github.com/Glebkas/countries
-- Live Site URL: https://github.com/Glebkas/countries
+-   Github Repository: https://github.com/Glebkas/countries
+-   Live Site URL: https://github.com/Glebkas/countries
 
 ## My process
 
 ### Built with
 
-- Semantic HTML5 markup
-- CSS custom properties
-- Flexbox
-- CSS Grid
-- Mobile-first workflow
-- [React](https://reactjs.org/) - JS library
-- [Styled-Components](https://styled-components.com/) 
-- [Axios](https://www.npmjs.com/package/axios) 
-- [React-route-dom-v6](https://www.npmjs.com/package/react-router-dom)
-- [React-icons](https://www.npmjs.com/package/react-icons)
+-   Semantic HTML5 markup
+-   CSS custom properties
+-   Flexbox
+-   CSS Grid
+-   Mobile-first workflow
+-   [React](https://reactjs.org/) - JS library
+-   [Styled-Components](https://styled-components.com/)
+-   [Axios](https://www.npmjs.com/package/axios)
+-   [React-route-dom-v6](https://www.npmjs.com/package/react-router-dom)
+-   [React-icons](https://www.npmjs.com/package/react-icons)
 
 ### Continued development
 
-- All data transitions should have animations
+-   All data transitions should have animations
 
 ## Author
 
