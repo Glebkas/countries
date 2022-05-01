@@ -1,0 +1,19 @@
+{
+  "files": {
+    "main.css": "/countries/static/css/main.5f1b7859.css",
+    "main.js": "/countries/static/js/main.01f603d6.js",
+    "static/media/NunitoSans-Light.ttf": "/countries/static/media/NunitoSans-Light.4cffb0809d61ec7ecdff.ttf",
+    "static/media/NunitoSans-Bold.ttf": "/countries/static/media/NunitoSans-Bold.f2f18c2e01d2f39c18c9.ttf",
+    "static/media/NunitoSans-SemiBold.ttf": "/countries/static/media/NunitoSans-SemiBold.19a4b6461d900f20a9a6.ttf",
+    "static/media/NunitoSans-SemiBold.woff": "/countries/static/media/NunitoSans-SemiBold.02bccd8e9d60a693d0d7.woff",
+    "static/media/NunitoSans-Bold.woff": "/countries/static/media/NunitoSans-Bold.8f8aea3966aa454f4732.woff",
+    "static/media/NunitoSans-Light.woff": "/countries/static/media/NunitoSans-Light.60496c1f4907f98b989f.woff",
+    "index.html": "/countries/index.html",
+    "main.5f1b7859.css.map": "/countries/static/css/main.5f1b7859.css.map",
+    "main.01f603d6.js.map": "/countries/static/js/main.01f603d6.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.5f1b7859.css",
+    "static/js/main.01f603d6.js"
+  ]
+}
