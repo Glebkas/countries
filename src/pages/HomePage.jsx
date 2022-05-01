@@ -13,6 +13,10 @@ export const HomePage = ({ countries, setCountries }) => {
             axios.get(ALL_COUNTRIES).then(({ data }) => setCountries(data));
     }, []);
 
+    useEffect(() => {
+        handleSearch();
+    }, [countries]);
+
     const handleSearch = (search, region) => {
         let data = [...countries];
         if (region) {
