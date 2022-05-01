@@ -2,7 +2,7 @@ import styled from 'styled-components';
 import { Link } from 'react-router-dom';
 
 export const HeaderTitle = styled(Link).attrs({
-    to: '/',
+    to: '/countries',
 })`
     color: var(--colors-text);
     font-size: var(--fs-dsbg);

@@ -17,7 +17,7 @@ function App() {
                 <Routes>
                     <Route
                         index
-                        path='/'
+                        path='/countries'
                         element={
                             <HomePage
                                 countries={countries}
