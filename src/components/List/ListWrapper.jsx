@@ -15,6 +15,6 @@ export const ListWrapper = styled.section`
     @media (min-width: 1024px) {
         grid-template-columns: repeat(4, 1fr);
         gap: 4rem;
-        padding: 4rem;
+        
     }
 `;
