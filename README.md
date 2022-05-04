@@ -19,7 +19,7 @@ Users should be able to:
 
 -   View the optimal layout for the app depending on their device's screen size
 -   Toggle between dark and light modes
--   Search for specific counrty by typing a name
+-   Search for a specific country by typing a name
 -   Filter countries by region
 -   View each country page for detailed information
 -   Navigate to countries that have a border with the selected country
