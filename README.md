@@ -48,6 +48,7 @@ Users should be able to:
 -   [Axios](https://www.npmjs.com/package/axios)
 -   [React-route-dom-v6](https://www.npmjs.com/package/react-router-dom)
 -   [React-icons](https://www.npmjs.com/package/react-icons)
+-   [react-select](https://www.npmjs.com/package/react-select)
 
 ### Continued development
 
